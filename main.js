@@ -45,5 +45,17 @@ info.innerHTML = `
 `;
 
 
+// =================== Condicionales ===================
+
+if(edad >= 18) {
+    info.innerHTML += `
+        <p>Soy mayor de edad</p>
+    ` 
+} else {
+    info.innerHTML += `
+        <p>Soy menor de edad</p>
+    `
+}
+
 
 
