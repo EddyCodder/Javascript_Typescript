@@ -36,9 +36,9 @@ testVar()
 
 // document.write(nombre)
 
-var info = document.getElementById("info")
+var  div_info = document.getElementById("info")
 
-info.innerHTML = `
+div_info.innerHTML = `
     <h2> Hola, soy ${nombre}</h2>
     <h2> Tengo ${edad}</h2>
     <h3> Vivo en ${ciudad}</h2>
@@ -48,14 +48,41 @@ info.innerHTML = `
 // =================== Condicionales ===================
 
 if(edad >= 18) {
-    info.innerHTML += `
+    div_info.innerHTML += `
         <p>Soy mayor de edad</p>
     ` 
 } else {
-    info.innerHTML += `
+    div_info.innerHTML += `
         <p>Soy menor de edad</p>
     `
 }
 
+// =================== Bucles ===================
 
+var anio_actual = 2025
+
+div_info.innerHTML += `<ul>`
+
+for(let i=2019; i<=anio_actual; i++) {
+    div_info.innerHTML += `
+        <li>Año: ${i}</li>
+    `
+}
+div_info.innerHTML += `</ul>`
+
+var div_colores = document.getElementById("colores")
+
+var colores = ['Rojo🔴', 'Amarillo🟨', 'Verde🍏']
+
+for(let idx in colores) {
+    div_colores.innerHTML += `
+        <p>${colores[idx]}</p>
+    `
+}
+
+
+
+
+
+ 
 
