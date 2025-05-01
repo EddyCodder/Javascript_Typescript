@@ -5,6 +5,7 @@ Este repositorio contiene ejemplos básicos para repasar los fundamentos de **Ja
 ## ✅ Temas
 
 - Variables (`var`, `let`, `const`)
-- Tipos de datos (números, strings, booleanos, arreglos, objetos)
+- Tipos de datos (números, strings, arreglos)
+- Estructuras de control: Condicionales - Bucles
 - Funciones (normales y flecha)
 - Tipado en TypeScript
