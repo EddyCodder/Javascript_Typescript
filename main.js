@@ -30,11 +30,19 @@ function testLet() {
 }
 
 testVar() 
-testLet()
+//testLet()
 
+// --- Uso de variables (Presentación - info)
 
+// document.write(nombre)
 
-document.write(nombre)
+var info = document.getElementById("info")
+
+info.innerHTML = `
+    <h2> Hola, soy ${nombre}</h2>
+    <h2> Tengo ${edad}</h2>
+    <h3> Vivo en ${ciudad}</h2>
+`;
 
 
 
