@@ -80,6 +80,44 @@ for(let idx in colores) {
     `
 }
 
+// =================== Funciones ===================
+
+var temas = ['Variables', 'Condicionales', 'Bucles', 'Arreglos', 'Objetos']
+
+var div_temas = getElementById = document.getElementById("temas")
+
+function mostrarTemas() {
+    div_temas.innerHTML += numTemas(temas, 3) // Llamamos a otra función
+}
+
+function numTemas(lista_temas, num) { // Ingresar a número de temas para mostrar
+    let cont_temas = '' 
+    for(let i=0; i<4; i++) {
+        cont_temas += `<p>✅${lista_temas[i]}</p>`
+    }
+    return cont_temas
+}
+
+// Llamamos a mostrar temas
+
+mostrarTemas()
+
+// =================== Funciones Flecha ===================
+
+var div_despedida = document.getElementById("despedida")
+var despedida = (p_palabra, s_palabra) => { // Función anónima (sin nombre)
+    div_despedida.innerHTML += p_palabra + " " + s_palabra
+}
+
+
+despedida("¡Muchas", "Gracias! 🫡")
+
+
+
+
+
+
+
 
 
 
