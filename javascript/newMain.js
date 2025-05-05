@@ -53,3 +53,7 @@ const menores_a_3 = numeros.filter(m => m < 3)
 console.log(`Filter (<3): ${menores_a_3}`)
 
 
+// find    
+const solo4 = numeros.find(n => n == 4);
+console.log("Find:", solo4); // 4
+
