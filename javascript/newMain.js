@@ -18,7 +18,29 @@ class Persona {
 
 }
 
-const persona1 = new Persona("Eduardo", 21, "Arequipa");
-console.log(persona1.presentarse());
+const persona1 = new Persona("Eduardo", 21, "Arequipa")
+console.log(persona1.presentarse())
 
-console.log(persona1.esMayor());
+console.log(persona1.esMayor())
+
+// =================== FUNCIONES DE ARREGLOS ===================
+
+// const numeros = [1, 2, 3, 4];
+
+// // map
+// const cuadrados = numeros.map(n => n * n);
+// console.log("Map:", cuadrados); // [1, 4, 9, 16]
+
+
+const numeros = [1, 2, 3, 4]
+
+// map - ejecuta una fucnión para cada uno de los elementos y devuelve el arreglo
+// cosa que no hace un forEach
+
+const dobles = numeros.map(n => n * 2) 
+const dobles2 = numeros.forEach(n => n * 2) // error - undefined
+
+console.log(dobles)
+console.log(dobles2)
+
+
