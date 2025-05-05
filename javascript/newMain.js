@@ -44,3 +44,12 @@ console.log(dobles)
 console.log(dobles2)
 
 
+// filter - permite filtrar por una condición al arreglo
+const mayores = numeros.filter(n => n > 2);
+console.log("Filter:", mayores); // [3, 4]
+
+
+const menores_a_3 = numeros.filter(m => m < 3)
+console.log(`Filter (<3): ${menores_a_3}`)
+
+
