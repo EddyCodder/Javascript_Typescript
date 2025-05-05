@@ -53,7 +53,16 @@ const menores_a_3 = numeros.filter(m => m < 3)
 console.log(`Filter (<3): ${menores_a_3}`)
 
 
-// find    
+// find - encuentra un valor de acuerdo a una condición
 const solo4 = numeros.find(n => n == 4);
 console.log("Find:", solo4); // 4
 
+
+// replace (string) - remplaza una cadena de caracteres 
+const saludo = "Hola mundo";
+const nuevoSaludo = saludo.replace("mundo", "Eduardo"); // retorna una nueva cadena
+console.log("Replace:", nuevoSaludo); // "Hola Eduardo"
+
+// repeat (string)
+const eco = "Hey! ".repeat(3); // retorna 3 veces la cadena
+console.log("Repeat:", eco); // "Hey! Hey! Hey! "
